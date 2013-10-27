@@ -1589,19 +1589,19 @@ design rules under a new name.</description>
 <attribute name="MF" value="MOLEX" x="11.43" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1462922" x="11.43" y="62.23" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC1" library="linear" package="TO92" value="78L05Z" x="39.37" y="62.23" rot="R90"/>
-<element name="R1" library="resistor" package="0204/5" value="" x="34.29" y="50.8" rot="R90"/>
-<element name="C1" library="resistor" package="C025-024X044" value="" x="30.48" y="49.53" rot="R270"/>
-<element name="R2" library="resistor" package="0204/5" value="" x="8.89" y="50.8" rot="R90"/>
-<element name="R3" library="resistor" package="0204/5" value="" x="17.78" y="50.8" rot="R90"/>
-<element name="R4" library="resistor" package="0204/5" value="" x="26.67" y="50.8" rot="R90"/>
+<element name="IC1" library="linear" package="TO92" value="LE33CZ" x="39.37" y="62.23" rot="R90"/>
+<element name="R1" library="resistor" package="0204/5" value="10M" x="34.29" y="50.8" rot="R90"/>
+<element name="C1" library="resistor" package="C025-024X044" value="100p" x="30.48" y="49.53" rot="R270"/>
+<element name="R2" library="resistor" package="0204/5" value="10K" x="8.89" y="50.8" rot="R90"/>
+<element name="R3" library="resistor" package="0204/5" value="10K" x="17.78" y="50.8" rot="R90"/>
+<element name="R4" library="resistor" package="0204/5" value="10K" x="26.67" y="50.8" rot="R90"/>
 <element name="S1" library="switch-omron" package="B3F-10XX" value="" x="26.67" y="60.96" rot="R180">
 <attribute name="OC_NEWARK" value="36M3542" x="26.67" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="26.67" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="26.67" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="26.67" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R5" library="resistor" package="0204/5" value="" x="35.56" y="58.42"/>
+<element name="R5" library="resistor" package="0204/5" value="10K" x="35.56" y="58.42"/>
 </elements>
 <signals>
 <signal name="VCC">

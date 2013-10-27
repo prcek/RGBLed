@@ -6136,20 +6136,20 @@ Metric Code Size 5664</description>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="IC1" library="linear" deviceset="78*" device="Z" technology="L05"/>
+<part name="IC1" library="linear" deviceset="78*" device="Z" technology="L05" value="LE33CZ"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0204/5"/>
-<part name="C1" library="resistor" deviceset="C-EU" device="025-024X044"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0204/5" value="10M"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="025-024X044" value="100p"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0204/5"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="0204/5"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="0204/5"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="0204/5"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6160,25 +6160,25 @@ Metric Code Size 5664</description>
 <instance part="Q1" gate="G$1" x="68.58" y="38.1"/>
 <instance part="Q2" gate="G$1" x="86.36" y="38.1"/>
 <instance part="Q3" gate="G$1" x="101.6" y="38.1"/>
-<instance part="X1" gate="-1" x="154.94" y="43.18"/>
-<instance part="X1" gate="-2" x="154.94" y="40.64"/>
-<instance part="X4" gate="-1" x="129.54" y="48.26"/>
+<instance part="X1" gate="-1" x="25.4" y="38.1"/>
+<instance part="X1" gate="-2" x="25.4" y="35.56"/>
+<instance part="X4" gate="-1" x="10.16" y="38.1"/>
 <instance part="X4" gate="-2" x="73.66" y="48.26"/>
 <instance part="X4" gate="-3" x="91.44" y="48.26"/>
 <instance part="X4" gate="-4" x="106.68" y="48.26"/>
 <instance part="X4" gate="-5" x="58.42" y="60.96"/>
-<instance part="X4" gate="-6" x="129.54" y="43.18"/>
-<instance part="GND1" gate="1" x="152.4" y="38.1"/>
+<instance part="X4" gate="-6" x="10.16" y="35.56"/>
+<instance part="GND1" gate="1" x="22.86" y="33.02"/>
 <instance part="GND2" gate="1" x="7.62" y="48.26"/>
-<instance part="P+1" gate="1" x="152.4" y="45.72"/>
-<instance part="P+2" gate="VCC" x="142.24" y="25.4"/>
-<instance part="P+3" gate="1" x="162.56" y="25.4"/>
-<instance part="GND3" gate="1" x="152.4" y="12.7"/>
+<instance part="P+1" gate="1" x="22.86" y="40.64"/>
+<instance part="P+2" gate="VCC" x="7.62" y="22.86"/>
+<instance part="P+3" gate="1" x="27.94" y="22.86"/>
+<instance part="GND3" gate="1" x="17.78" y="10.16"/>
 <instance part="P+4" gate="VCC" x="7.62" y="66.04"/>
-<instance part="IC1" gate="A1" x="152.4" y="22.86" rot="MR0"/>
+<instance part="IC1" gate="A1" x="17.78" y="20.32" rot="MR0"/>
 <instance part="GND4" gate="1" x="88.9" y="30.48"/>
-<instance part="P+5" gate="1" x="127" y="50.8"/>
-<instance part="GND5" gate="1" x="127" y="40.64"/>
+<instance part="P+5" gate="1" x="7.62" y="40.64"/>
+<instance part="GND5" gate="1" x="7.62" y="33.02"/>
 <instance part="R1" gate="G$1" x="45.72" y="58.42"/>
 <instance part="C1" gate="G$1" x="50.8" y="55.88"/>
 <instance part="GND6" gate="1" x="50.8" y="48.26"/>
