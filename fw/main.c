@@ -48,9 +48,7 @@ void flash_fast() {
 	_delay_ms(50);
 }
 
-
-
-
+///////// CAPACITIVE SENSOR TEST //////////
 long do_sense() {
 	long total = 0;
 	long timeout = 10000;
@@ -113,6 +111,35 @@ int do_read() {
 	return 0;
 }
 
+///////// RGB test ///////////
+static int on = 0;
+ISR(TIMER0_OVF_vect) {
+	if (on) {
+		LED_R_OFF;
+		on = 0;
+	} else {
+		LED_R_ON;
+		on = 1;
+	}
+}
+
+
+
+void rgb_setup() {
+//	cli();
+
+	// FastPWM a clk/1024 prescaler
+	TCCR0A = _BV(WGM01) | _BV(WGM00);  
+	TCCR0B = _BV(WGM02) | _BV(CS02) | _BV(CS00); 
+	OCR0A = 50; //TOP value
+
+	TCNT0 = 0; // init value
+	TIMSK = _BV(TOIE0);
+	sei();
+
+}
+
+
 
 int main(void)
 {
@@ -123,6 +150,14 @@ int main(void)
     LED_R_ON;
     LED_G_ON;
     LED_B_ON;
+
+   
+
+    rgb_setup();
+
+    for(;;) {
+    	
+    }
 
 
     SEND_OUTPUT;    //set sendpin to OUTPUT
