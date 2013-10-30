@@ -49,3 +49,9 @@ dude:
 cpp:
 	$(COMPILE) -E main.c
 
+.PHONY:	test
+
+test:	test.c
+	gcc test.c -o test
+	./test
+
