@@ -6143,13 +6143,16 @@ Metric Code Size 5664</description>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0204/5" value="10M"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="025-024X044" value="100p"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/5" value="1M"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0204/5" value="1M"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0204/5" value="1M"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="0204/5" value="10K"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="0204/5" value="1K"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="0204/5" value="1K"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="0204/5" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6189,6 +6192,9 @@ Metric Code Size 5664</description>
 <instance part="S1" gate="1" x="78.74" y="58.42" rot="R270"/>
 <instance part="GND8" gate="1" x="93.98" y="53.34"/>
 <instance part="R5" gate="G$1" x="88.9" y="58.42"/>
+<instance part="R6" gate="G$1" x="58.42" y="30.48" rot="R180"/>
+<instance part="R7" gate="G$1" x="53.34" y="25.4" rot="R180"/>
+<instance part="R8" gate="G$1" x="48.26" y="20.32" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6291,40 +6297,28 @@ Metric Code Size 5664</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="PB0"/>
-<wire x1="99.06" y1="20.32" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="20.32" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<junction x="99.06" y="20.32"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="83.82" y1="35.56" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="22.86" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="22.86" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PB1"/>
 <wire x1="43.18" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<junction x="83.82" y="22.86"/>
+<wire x1="43.18" y1="53.34" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="25.4" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="66.04" y1="35.56" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="25.4" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="25.4" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="25.4" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PB2"/>
 <wire x1="45.72" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<junction x="66.04" y="25.4"/>
+<wire x1="45.72" y1="55.88" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -6350,6 +6344,39 @@ Metric Code Size 5664</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="S1" gate="1" pin="S1"/>
 <wire x1="83.82" y1="58.42" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<junction x="83.82" y="25.4"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="99.06" y1="35.56" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="20.32" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<junction x="99.06" y="20.32"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="35.56" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="30.48" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<junction x="66.04" y="30.48"/>
 </segment>
 </net>
 </nets>
